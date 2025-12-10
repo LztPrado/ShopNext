@@ -6,6 +6,8 @@
     <title>ShopNext</title>
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/hero.css" />
+    <link rel="stylesheet" href="/css/featured.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -15,6 +17,8 @@
     />
     <script defer src="/js/main.js"></script>
     <script defer src="/js/menu.js"></script>
+    <script defer src="/js/title-text-to-change.js"></script>
+    <script defer src="/js/hover-in-description.js"></script>
   </head>
   <body>
     <header>
@@ -39,5 +43,26 @@
         </ul>
       </nav>
     </header>
+    <section class="hero">
+      <div class="hero-section">
+        <div class="content-hero">
+          <div id="title-container">
+            <h2 class="hero-title">A próxima <br>geração <span id="title-text-to-change" class="fade-effect-title-text">do e-commerce</span></h2>
+          </div>
+          
+          <p  class="hero-description">Descubra uma experiência de compras simples, moderna e rápida. Produtos selecionados, navegação fluida e design pensado para você.</p>
+
+        <p class="hero-description">Encontre os melhores produtos com os melhores preços!</p>
+          <div class="hero-btns">
+            <button class="cta-buttons" id="cta-btn-1">Explorar Produtos</button>
+            <button class="cta-buttons" id="cta-btn-2">Conheça-nos</button>
+          </div>
+        
+        </div>
+        
+    </section>
+
+    <section class="featured-products"></section>
+    <footer></footer>
   </body>
 </html>
