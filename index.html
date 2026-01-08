@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/hero.css" />
     <link rel="stylesheet" href="/css/featured.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -43,7 +44,7 @@
         </ul>
       </nav>
     </header>
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="hero-section">
         <div class="content-hero">
           <div id="title-container">
@@ -54,15 +55,70 @@
 
         <p class="hero-description">Encontre os melhores produtos com os melhores preços!</p>
           <div class="hero-btns">
-            <button class="cta-buttons" id="cta-btn-1">Explorar Produtos</button>
-            <button class="cta-buttons" id="cta-btn-2">Conheça-nos</button>
+            <button class="cta-buttons" id="cta-btn-1"><a style="text-decoration: none; color: inherit;" href="#products">Explorar Produtos</a></button>
+            <button class="cta-buttons" id="cta-btn-2"><a style="text-decoration: none; color: inherit;" href="#contact">Conheça-nos</a></button>
           </div>
         
         </div>
-        
+        </div>
     </section>
 
-    <section class="featured-products"></section>
+    <section class="featured-products" id="products">
+      <h2 class="section-products-title">Produtos em Destaque</h2>
+      <div class="products-container">
+        <div class="product-card">
+          <img src="assets/img/Fone de Ouvido Bluetooth NextSound.png" alt="Fone de Ouvido Bluetooth NextSound" class="product-image" />
+          <div class="product-info">
+            <h3 class="product-name">Fone de Ouvido Bluetooth NextSound</h3>
+            <span class="price-without-discount">R$ 129,99</span>
+          <span class="product-price">R$ 99,99</span>
+          <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="assets/img/Smartwatch NextFit.png" alt="Smartwatch NextFit" class="product-image" />
+
+          <div class="product-info">
+            <h3 class="product-name">Smartwatch NextFit</h3>
+            <span class="price-without-discount">R$ 219,99</span>
+          <span class="product-price">R$ 149,99</span>
+          <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+          </div>
+
+        </div>
+        <div class="product-card">
+          <img src="assets/img/suporteErgonomico.png" alt="Suporte Ergonômico para Notebook" class="product-image" />
+          <div class="product-info">
+            <h3 class="product-name">Suporte Ergonômico para Notebook</h3>
+            <span class="price-without-discount">R$ 237,99</span>
+            <span class="product-price">R$ 199,99</span>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="assets/img/carregadorUSBc.png" alt="Carregador Rápido USB-C 65W" class="product-image" />
+          <div class="product-info">
+            <h3 class="product-name">Carregador Rápido USB-C 65W</h3>
+            <span class="price-without-discount">R$ 89,99</span>
+          <span class="product-price">R$ 79,99</span>
+          <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="contact-section" id="contact">
+        <h2 class="contact-title">Fale Conosco</h2>
+        <p class="contact-description">Tem alguma dúvida ou precisa de ajuda? Entre em contato conosco!</p>
+        <form class="contact-form">
+          <input type="text" placeholder="Seu Nome" required />
+          <input type="email" placeholder="Seu Email" required />
+          <textarea placeholder="Sua Mensagem" required></textarea>
+          <button type="submit" class="submit-btn">Enviar Mensagem</button>
+        </form>
+      </div>
+    </section>
     <footer></footer>
   </body>
 </html>
